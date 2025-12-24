@@ -12,6 +12,42 @@ HTTP is a better option when you are building an MCP server where reusability fr
 
 ## Standard Input / Output (stdio) Example
 
+The [STDIO folder](https://github.com/ev2900/MCP_Basics/tree/main/STDIO) has the required artifacts to run an MCP server with a simple hello world tool.
 
+Begin by installing the required python libraries
+
+```
+pip install -r requirements.txt
+```
+
+Then run the client
+
+```
+python client.py
+```
+
+The client starts a sub-process that runs the MCP server. The response from the MCP server is printed to the console.
 
 ## HTTP Example
+
+The [HTTP folder](https://github.com/ev2900/MCP_Basics/tree/main/HTTP) has the required artifacts to run an MCP server with a simple hello world tool.
+
+Begin by installing the required python libraries
+
+```
+pip install -r requirements.txt
+```
+
+Then start the MCP server
+
+```
+python server.py
+```
+
+Once the MCP server is running, run the client 
+
+```
+python client.py
+```
+
+The response from the "remote" MCP server is printed to the console.
